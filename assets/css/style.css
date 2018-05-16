@@ -40,7 +40,7 @@ h1 {
 
 ul {
     float: right;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 27px 0px;
 }
@@ -95,17 +95,29 @@ article {
 
 }
 
-img {
+.avatar {
     border-radius: 50%;
     width: 200px;
-    padding: 20px 0;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
-p {
+.content {
+    display: inline-block;
+    float: left;
+    padding-top: 20px;
+}
 
+
+p {
+   
 }
 
 footer {
     background-color: #666;
     text-align: center;
+    border-top: #5ebaad 6px solid;
+    padding: 20px;
+    color: #fff;
 }
