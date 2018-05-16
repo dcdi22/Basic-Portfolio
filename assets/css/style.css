@@ -8,11 +8,10 @@ body {
 
 header {
     background-color: #fff;
-    border: 1px solid #ccc;
-    clea
+    border-bottom: 1px solid #ccc;
 }
 
-.main-container, div {
+.main-container, .heading {
     width: 960px;
     margin: auto;
 }
@@ -27,6 +26,13 @@ div {
 
 }
 
+.myName {
+    margin: 0;
+    padding: 20px 25px;
+    background-color: #5ebaad;
+    color: #fff;
+}
+
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     float: left;
@@ -35,20 +41,54 @@ h1 {
 ul {
     float: right;
     list-style: none;
+    margin: 0;
+    padding: 27px 0px;
 }
 
 li {
     float: left;
+    padding-right: 20px;
+}
+
+.nopad {
+    padding-right: 0;
+}
+
+.nav-div {
+    color: #ccc;
+}
+
+a:link {
+    text-decoration: none;
+    color: #5ebaad;
+}
+a:visited {
+    color: #5ebaad;
+}
+a:hover {
+    color: #49948a;
+}
+
+.sectioning {
+    background-image: url("../images/groovepaper2.png");
+    padding: 20px;
 }
 
 .main-container {
     clear: both;
+    box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ddd;
+    padding: 25px;
 }
 
 .about-me {
-
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: #5ebaad;
+    border-bottom: 2px solid #ccc;
 }
 
 article {
@@ -56,7 +96,9 @@ article {
 }
 
 img {
-
+    border-radius: 50%;
+    width: 200px;
+    padding: 20px 0;
 }
 
 p {
@@ -65,4 +107,5 @@ p {
 
 footer {
     background-color: #666;
+    text-align: center;
 }
