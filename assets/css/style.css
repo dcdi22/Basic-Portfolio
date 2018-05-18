@@ -1,5 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/groovepaper2.png");
 }
 
 header {
@@ -21,7 +34,7 @@ header {
 .myName {
     margin: 0;
     padding: 20px 25px;
-    background-color: #5ebaad;
+    background-color: #1ba39c;
     color: #fff;
 }
 
@@ -47,23 +60,22 @@ li {
 }
 
 .nav-div {
-    color: #ccc;
+    color: #939393;
 }
 
 a:link {
     text-decoration: none;
-    color: #5ebaad;
+    color: #1ba39c;
 }
 a:visited {
-    color: #5ebaad;
+    color: #1ba39c;
 }
 a:hover:not(.active) {
-	color: #49948a;
+	color: #147974;
 }
 
 
 .main-section {
-    background-image: url("../images/groovepaper2.png");
     padding: 20px;
 }
 
@@ -80,7 +92,7 @@ a:hover:not(.active) {
     width: 100%;
     margin: 0;
     padding: 20px 0;
-    color: #5ebaad;
+    color: #1ba39c;
     border-bottom: 2px solid #ccc;
 }
 
@@ -116,7 +128,7 @@ article {
     float: left;
     position: absolute;
     bottom: 15px;
-    background-color: #5ebaad;
+    background-color: #1ba39c;
     color: #fff;
     text-align: center;
 }
@@ -130,7 +142,7 @@ article {
     position: absolute;
     bottom: 20px;
     
-    background-color: #5ebaad;
+    background-color: #1ba39c;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -159,20 +171,24 @@ textarea {
 
 button {
     padding: 10px 25px;
-    background-color: #5ebaad;
+    background-color: #1ba39c;
     color: #fff;
 }
 
 footer {
     background-color: #666;
     text-align: center;
-    border-top: #5ebaad 6px solid;
+    border-top: #1ba39c 6px solid;
     color: #a3a3a3;
+    position: relative;
 }
 
-footer p {
-    margin: 0;
-    margin-top: 20px;
-    padding-top: 20px;
+.footer, .push {
+  height: 50px;
+}
+
+footer span {
+    position: absolute;
+    bottom: 0;
     font-size: small;
 }
