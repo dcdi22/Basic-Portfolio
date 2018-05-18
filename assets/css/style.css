@@ -1,7 +1,3 @@
-* {
-
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,7 +8,7 @@ header {
 }
 
 .main-container, .heading {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -20,10 +16,6 @@ header {
     content: "";
     clear: both;
     display: table;
-}
-
-div {
-
 }
 
 .myName {
@@ -65,11 +57,12 @@ a:link {
 a:visited {
     color: #5ebaad;
 }
-a:hover {
-    color: #49948a;
+a:hover:not(.active) {
+	color: #49948a;
 }
 
-.sectioning {
+
+.main-section {
     background-image: url("../images/groovepaper2.png");
     padding: 20px;
 }
@@ -105,19 +98,81 @@ article {
 
 .content {
     display: inline-block;
-    float: left;
+    /*float: left;*/
     padding-top: 20px;
 }
 
+.imagecontainer {
+    width: 300px;
+    height: 200px;
+    float: left;
+    position: relative;
+    margin: 30px;
+}
 
-p {
-   
+.tag {
+    width: 300px;
+    padding: 15px 0;
+    float: left;
+    position: absolute;
+    bottom: 15px;
+    background-color: #5ebaad;
+    color: #fff;
+    text-align: center;
+}
+
+.portimg {
+    width: 300px;
+    height: 200px;
+}
+
+/*.text-box {
+    position: absolute;
+    bottom: 20px;
+    
+    background-color: #5ebaad;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}*/
+
+
+
+/*I can't for the life of me figure out how to get the form to strech to the max-width*/
+form {
+    /*white-space: pre-line;*/
+    width: 100%;
+    display: block;
+}
+
+
+input, textarea {
+    font-size: 16px;
+    width: 96%;
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #5ebaad;
+    color: #fff;
 }
 
 footer {
     background-color: #666;
     text-align: center;
     border-top: #5ebaad 6px solid;
-    padding: 20px;
-    color: #fff;
+    color: #a3a3a3;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: small;
 }
